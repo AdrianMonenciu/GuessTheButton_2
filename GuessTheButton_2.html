@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Guess the button 1</title>
+    <script>
+      function luckyButton(clicked_id) {
+        let randomNr = Math.floor((Math.random() * 3) + 1);
+        if (clicked_id == randomNr) {
+          alert("You clicked the lucky button!")
+        } else {
+          alert("You didn't click the lucky button! The lucky button is: " + randomNr)
+        }
+      }
+    </script> 
+  </head>
+  <body>
+    <div class="container">
+      <div class="card" style="width: 40rem;">
+        <div class="card-body">
+          <h5 class="card-title">Guess the button</h5>
+          <p class="card-text">You have 3 buttons, one of them is the winner and will be randomly picked. The software will display if the winning button was picked.</p>
+          <div class="btn-group" role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn btn-outline-primary" id="1" onclick="luckyButton(this.id)">Button 1</button>
+            <button type="button" class="btn btn-outline-primary" id="2" onclick="luckyButton(this.id)">Button 2</button>
+            <button type="button" class="btn btn-outline-primary" id="3" onclick="luckyButton(this.id)">Button 3</button>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </body>
+</html>
