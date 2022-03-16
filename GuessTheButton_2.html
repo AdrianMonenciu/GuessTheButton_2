@@ -14,7 +14,10 @@
         <div class="card-body">
           <h5 class="card-title">Guess the button 2</h5>
           <p class="card-text">This application will add on the screen the number of buttons introduced by the user. One of the buttons is the winner and will be randomly picked. The application will display if the winning button was picked.</p>
-          <input type="text" id="buttonsNr"><br><br>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Buttons number:</label><br>
+            <input type="text" id="buttonsNr"><br>
+          </div>
           <button type="submit" class="btn btn-primary" id="submitButton" onclick="return addButtons()">Submit</button>
           <button type="submit" class="btn btn-primary" id="restartButton" onclick="restartTheGame()">Restart</button>
         </div>
